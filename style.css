@@ -1,0 +1,118 @@
+
+/* Remove margens e define o comportamento dos elementos */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Configura o fundo e a fonte da página */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f1f4f9;
+    color: #263238;
+}
+
+/* Estilização do cabeçalho */
+header {
+    background-color: #172554;
+    color: white;
+    text-align: center;
+    padding: 45px 20px;
+}
+
+header h1 {
+    font-size: 36px;
+    margin-bottom: 12px;
+}
+
+header p {
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+/* Área principal */
+main {
+    max-width: 1100px;
+    margin: 40px auto;
+    padding: 0 20px;
+}
+
+/* Organização dos cartões */
+.sites {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 25px;
+}
+
+/* Aparência de cada cartão */
+.card {
+    background-color: white;
+    padding: 25px;
+    text-align: center;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+    transition: transform 0.3s;
+}
+
+/* Efeito ao passar o mouse */
+.card:hover {
+    transform: translateY(-6px);
+}
+
+/* Imagens dos logotipos */
+.card img {
+    width: 85px;
+    height: 85px;
+    object-fit: contain;
+    margin-bottom: 15px;
+}
+
+/* Títulos dos cartões */
+.card h2 {
+    font-size: 22px;
+    margin-bottom: 12px;
+}
+
+/* Descrições */
+.card p {
+    font-size: 14px;
+    line-height: 1.5;
+    margin-bottom: 20px;
+}
+
+/* Botões de acesso */
+.card a {
+    display: inline-block;
+    background-color: #2563eb;
+    color: white;
+    text-decoration: none;
+    padding: 10px 20px;
+    border-radius: 6px;
+    font-weight: bold;
+}
+
+/* Efeito dos botões */
+.card a:hover {
+    background-color: #1e40af;
+}
+
+/* Rodapé */
+footer {
+    background-color: #172554;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    margin-top: 50px;
+}
+
+/* Ajustes para telas pequenas */
+@media (max-width: 600px) {
+    header h1 {
+        font-size: 28px;
+    }
+
+    main {
+        margin: 25px auto;
+    }
+}
